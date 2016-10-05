@@ -49,6 +49,9 @@
 	var Heisenberg_1 = __webpack_require__(2);
 	var SpeechRecognition_1 = __webpack_require__(4);
 	var Broadcaster_1 = __webpack_require__(3);
+	__webpack_require__(5);
+	__webpack_require__(7);
+	__webpack_require__(13);
 	var App = (function () {
 	    function App(button, output, Heisenberg, SpeechRecognition) {
 	        this.button = button;
@@ -225,6 +228,30 @@
 	}());
 	exports.SpeechRecognition = SpeechRecognition;
 
+
+/***/ },
+/* 5 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 6 */,
+/* 7 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 8 */,
+/* 9 */,
+/* 10 */,
+/* 11 */,
+/* 12 */,
+/* 13 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
 
 /***/ }
 /******/ ]);

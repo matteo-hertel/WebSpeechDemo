@@ -18,11 +18,18 @@
   "homepage": "https://github.com/matteo-hertel/WebSpeechDemo#readme",
   "dependencies": {
     "@types/webspeechapi": "0.0.27",
-    "ts-loader": "^0.8.2",
-    "typescript": "^2.0.3"
+    "animate.css": "^3.5.2",
+    "bootstrap": "^3.3.7",
+    "file-loader": "^0.9.0",
+    "image-webpack-loader": "^2.0.0",
+    "typescript": "^2.0.3",
+    "url-loader": "^0.5.7"
   },
   "devDependencies": {
     "css-loader": "^0.25.0",
-    "style-loader": "^0.13.1"
+    "extract-text-webpack-plugin": "^1.0.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.2",
+    "ts-loader": "^0.8.2"
   }
 }

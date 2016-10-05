@@ -3,6 +3,10 @@ import { Heisenberg } from "./class/Heisenberg";
 import { SpeechRecognition } from "./class/SpeechRecognition";
 import { Broadcaster } from "./class/Broadcaster";
 
+import 'animate.css/animate.min.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import './../bower_components/material-kit/assets/css/material-kit.css';
+
 class App {
     constructor(
         private button: HTMLElement,

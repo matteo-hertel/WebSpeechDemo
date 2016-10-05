@@ -1,0 +1,21 @@
+{
+  "name": "webspeechdemo",
+  "description": "Web Speech Demo Breaking Bad style",
+  "main": "index.html",
+  "authors": [
+    "Matteo Hertel <info@matteohertel.com> (http://matteohertel.com/)"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/matteo-hertel/WebSpeechDemo",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "material-kit": "^1.1.0"
+  }
+}
