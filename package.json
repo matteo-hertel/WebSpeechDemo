@@ -4,7 +4,10 @@
   "description": "Web Speech Demo Breaking Bad style",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "build": "webpack --production",
+    "prebuild:deployment": "bower i",
+    "build:deployment": "webpack --production"
   },
   "repository": {
     "type": "git",
