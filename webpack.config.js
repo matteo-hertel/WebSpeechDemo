@@ -22,7 +22,7 @@ module.exports = {
                 loader: ExtractTextPlugin.extract("css")
             }, {
                 test: /\.(jpe?g|png|gif|svg)$/i,
-                loaders: ['file?hash=sha512&digest=hex&name=[hash].[ext]', 'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false']
+                loaders: ['file?hash=sha512&digest=hex&name=[name].[ext]', 'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false']
             }, {
                 test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,
                 loader: "url?limit=10000&mimetype=application/font-woff"
@@ -46,5 +46,6 @@ module.exports = {
         ]
     },
     plugins: [new ExtractTextPlugin("styles.css"), new CopyWebpackPlugin([
-        { from: './index.html', to: './../dist/index.html' }])]
+        { from: './index.html', to: './../dist/index.html' },
+        { from: './assets', to: './../dist/assets' }])]
 }

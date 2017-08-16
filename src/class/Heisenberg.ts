@@ -22,9 +22,8 @@ export class Heisenberg {
     resetSpeechValues(): void {
         var voices = window.speechSynthesis.getVoices();
         this.heisenberg.voice = voices[10];
-        //this.heisenberg.voiceURI = 'native';
         this.heisenberg.volume = 0.5; // 0 to 1
-        this.heisenberg.rate = 0.2; // 0.1 to 10
+        this.heisenberg.rate = 0.7; // 0.1 to 10
         this.heisenberg.pitch = 0; //0 to 2
         this.heisenberg.lang = 'en-US';
     }
@@ -43,9 +42,10 @@ export class Heisenberg {
         speechSynthesis.speak(this.heisenberg);
     }
     hisNameIsHank(): void {
-        this.heisenberg.text = "His name is HANK!";
+        this.heisenberg.text = "You don't think, You never figured out how to think!";
         this.heisenberg.volume = 1; // 0 to 1
-        this.heisenberg.pitch = 1; //0 to 2
+        this.heisenberg.rate = 0.9; // 0.1 to 10
+        this.heisenberg.pitch = 0; //0 to 2
         speechSynthesis.speak(this.heisenberg);
     }
 
