@@ -1,16 +1,19 @@
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 
+var path = require("path");
 module.exports = {
-    entry: './src/app.ts',
+    entry: "./src/app.ts",
     output: {
         path: "./dist",
         filename: 'bundle.js'
     },
     resolve: {
-        extensions: ['', '.webpack.js', '.web.js', '.ts', '.js']
+        extensions: ["", '.webpack.js', '.web.js', '.ts', '.js']
     },
     module: {
         loaders: [
+
             {
                 test: /\.ts$/,
                 loader: 'ts-loader'
@@ -37,14 +40,11 @@ module.exports = {
                 loader: "file"
             },
             {
-                test: /\.html(\?v=\d+\.\d+\.\d+)?$/,
-                loader: "file"
-            },
-            {
                 test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
                 loader: "url?limit=10000&mimetype=image/svg+xml"
             }
         ]
     },
-    plugins: [new ExtractTextPlugin("styles.css")]
+    plugins: [new ExtractTextPlugin("styles.css"), new CopyWebpackPlugin([
+        { from: './index.html', to: './../dist/index.html' }])]
 }

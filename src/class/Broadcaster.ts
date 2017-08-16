@@ -1,8 +1,8 @@
 export class Broadcaster {
     static events = {};
 
-    static addListener(eventName: string, callback: any) : void {
-        
+    static addListener(eventName: string, callback: any): void {
+
         if (!this.events.hasOwnProperty(eventName)) {
             this.events[eventName] = []
         }
@@ -10,11 +10,11 @@ export class Broadcaster {
         this.events[eventName].push(callback);
     }
 
-    static fireEvent(eventName: string) : void {
+    static fireEvent(eventName: string): void {
         if (!this.events.hasOwnProperty(eventName)) {
             return;
         }
-        this.events[eventName].forEach(function(cb) {
+        this.events[eventName].forEach(function (cb) {
             if (typeof cb === "function") {
                 cb();
             }

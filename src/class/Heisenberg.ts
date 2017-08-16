@@ -33,7 +33,7 @@ export class Heisenberg {
         this.heisenberg.text = "Say my name";
 
         speechSynthesis.speak(this.heisenberg);
-        setTimeout(function() {
+        setTimeout(function () {
             Broadcaster.fireEvent("SpeechRecognition.start");
         }, 1500);
     }
