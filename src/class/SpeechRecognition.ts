@@ -33,6 +33,7 @@ export class SpeechRecognition {
         this.recognition.onresult = this.handleResult.bind(this);
     }
     handleResult(e: SpeechRecognitionEvent): void {
+        console.log("Detected words:", e.results[0][0].transcript.toLowerCase());
         if (e.results[0][0].transcript.toLowerCase() === "heisenberg") {
             Broadcaster.fireEvent("Heisenberg.youreGoddamnRight");
         } else {
